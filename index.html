@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Nonas kuche </title>
+  
+</head>
+<body>
+
+<div id="app">
+
+  <header>
+    <h1> Nonas kuche </h1>
+    <p>{{ tagline }}</p>
+  </header>
+
+  <nav class="category-nav">
+    <button
+      v-for="category in categories"
+      :key="category.id"
+      :class="{ active: activeCategory === category.id }"
+      @click="activeCategory = category.id"
+    >
+      {{ category.label }}
+    </button>
+  </nav>
+
+  <main class="menu">
+    <section
+      v-for="section in visibleSections"
+      :key="section.id"
+      class="menu-section"
+    >
+        <div class="section-header">
+        <h2 class="section-title">{{ section.title }}</h2>
+        
+      </div>
+
+      <div class="menu-items">
+        <div
+          v-for="item in section.items"
+          :key="item.name"
+          class="menu-item"
+        >
+          <h3 class="item-name">{{ item.name }}</h3>
+          <p class="item-desc">{{ item.desc }}</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Buon Appetito!</p>
+    <p class="footer-note">Fragen Sie unsere Servicekräfte nach der wöchentlich wechselnden Tageskarte.</p>
+  </footer>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
