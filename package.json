@@ -1,0 +1,10 @@
+{
+  "name": "nonna-kuche",
+  "version": "1.0.0",
+  "description": "a simple menu vue app.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
+

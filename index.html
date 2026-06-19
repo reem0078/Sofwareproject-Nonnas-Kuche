@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title> Nonas kuche </title>
-  
 </head>
 <body>
 
@@ -14,6 +13,14 @@
     <h1> Nonas kuche </h1>
     <p>{{ tagline }}</p>
   </header>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      v-model="searchQuery"
+      placeholder="Nach Zutaten suchen … (z. B. Basilikum, Parmesan)"
+    />
+  </div>
 
   <nav class="category-nav">
     <button
@@ -27,14 +34,17 @@
   </nav>
 
   <main class="menu">
+    <p v-if="visibleSections.length === 0" class="no-results">
+      Keine Gerichte mit „{{ searchQuery }}" gefunden.
+    </p>
+
     <section
       v-for="section in visibleSections"
       :key="section.id"
       class="menu-section"
     >
-        <div class="section-header">
+      <div class="section-header">
         <h2 class="section-title">{{ section.title }}</h2>
-        
       </div>
 
       <div class="menu-items">
@@ -45,6 +55,9 @@
         >
           <h3 class="item-name">{{ item.name }}</h3>
           <p class="item-desc">{{ item.desc }}</p>
+          <p class="item-ingredients">
+            <strong>Zutaten:</strong> {{ item.ingredients.join(', ') }}
+          </p>
         </div>
       </div>
     </section>
