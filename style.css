@@ -39,3 +39,26 @@ header p{
     color: black;
 
 }
+
+.category-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0 2rem;
+    border-top: solid 3px #f7fffa;
+    border-bottom: solid 3px #f7fffa;
+}
+
+.category-nav button {
+    padding: 0.4rem;
+    font-family: "Bodoni Moda", serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+}
+
+.category-nav button:hover {
+    background:#6183753f;
+}
