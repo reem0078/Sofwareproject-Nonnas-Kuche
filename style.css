@@ -8,5 +8,34 @@ body{
 
 header{ 
     font-family:  "Bodoni Moda", serif;
-    justify-content: center;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 0;
+    font-size: clamp(3rem,8vw,5rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+header p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.7rem;
+}
+
+.search-bar{
+    max-width: 40%;
+    margin-top:2rem auto;
+}
+
+.search-bar input {
+    width: 100%;
+    border: 1px solid rgba(60, 46, 32, 0.8) ;
+    border-radius: 10px;
+    background: transparent;
+    font-family: "Bodoni Moda", serif;
+    color: black;
+
 }
