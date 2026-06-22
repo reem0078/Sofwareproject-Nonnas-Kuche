@@ -129,3 +129,17 @@ header p{
 .item-ingredients strong {
     font-weight: 600;
 }
+
+.footer > p:first-child {
+    font-family: "Cormorant Garamond";
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-note{
+    font-family: "GFS Didot", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
