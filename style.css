@@ -6,6 +6,7 @@ body{
     background-color: #CDDCD5;
     padding-left:2rem;
     padding-right:2rem;
+    color: #2e3c36;
 
 }
 
@@ -88,10 +89,11 @@ header p{
 
 .menu-section {
     margin-bottom: 5rem;
-}
+    }
 
 .section-header{
     font-family: "Cormorant Garamond", serif;
+    color: #2e3c36;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 100;
@@ -111,7 +113,9 @@ header p{
 }
 
 .item-name{
+    
     font-family: "GFS Didot", serif;
+    color: #3e5448;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -119,6 +123,7 @@ header p{
 
 .item-desc{
     font-family: "GFS Didot", serif;
+    color: #495a50;
     font-size: 0.9rem;
     font-weight: 500;  
 }
@@ -126,7 +131,7 @@ header p{
 .item-ingredients {
     margin-top: 0.75rem;
     font-size: 0.9rem;
-    color: #444;
+    color: #5E7366;
 }
 
 .item-ingredients strong {
