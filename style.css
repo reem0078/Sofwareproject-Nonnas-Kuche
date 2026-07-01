@@ -45,7 +45,7 @@ header p{
     background: transparent;
     text-align: center;
     font-family: "GFS Didot", serif;
-    color: black;
+    color: #2e3c36;
 }
 
 .no-results{
@@ -77,9 +77,9 @@ header p{
 }
 
 .category-nav button:hover {
-    background:#6183753f;
+    background:#61837541;
     border-radius: 10px;    
-    padding-left:1rem;
+    padding-left:0.5rem;
 }
 
 .menu{
